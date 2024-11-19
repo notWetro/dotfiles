@@ -5,3 +5,14 @@
 
 2024/10/24 (15:51:48) | ===> btop++ v.1.4.0
 2024/10/24 (15:51:48) | WARNING: Failed to set locale UTF-8 continuing anyway.
+
+2024/11/19 (17:19:59) | ===> btop++ v.1.4.0
+2024/11/19 (17:19:59) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:05) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:11) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:17) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:23) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:29) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:35) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:41) | ERROR: Stall in Runner thread, restarting!
+2024/11/19 (17:20:47) | ERROR: Stall in Runner thread, restarting!
