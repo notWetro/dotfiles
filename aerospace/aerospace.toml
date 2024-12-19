@@ -127,19 +127,6 @@ ctrl-6 = 'workspace 6'
 ctrl-7 = 'workspace 7'
 ctrl-8 = 'workspace 8'
 ctrl-9 = 'workspace 9'
-ctrl-e = 'workspace E'
-ctrl-f = 'workspace F'
-ctrl-g = 'workspace G'
-ctrl-o = 'workspace O'
-ctrl-p = 'workspace P'
-ctrl-q = 'workspace Q'
-ctrl-r = 'workspace R'
-ctrl-t = 'workspace T'
-ctrl-v = 'workspace V'
-ctrl-w = 'workspace W'
-ctrl-x = 'workspace X'
-ctrl-y = 'workspace Y'
-ctrl-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 ctrl-shift-1 = 'move-node-to-workspace 1'
@@ -151,19 +138,6 @@ ctrl-shift-6 = 'move-node-to-workspace 6'
 ctrl-shift-7 = 'move-node-to-workspace 7'
 ctrl-shift-8 = 'move-node-to-workspace 8'
 ctrl-shift-9 = 'move-node-to-workspace 9'
-ctrl-shift-e = 'move-node-to-workspace E'
-ctrl-shift-f = 'move-node-to-workspace F'
-ctrl-shift-g = 'move-node-to-workspace G'
-ctrl-shift-o = 'move-node-to-workspace O'
-ctrl-shift-p = 'move-node-to-workspace P'
-ctrl-shift-q = 'move-node-to-workspace Q'
-ctrl-shift-r = 'move-node-to-workspace R'
-ctrl-shift-t = 'move-node-to-workspace T'
-ctrl-shift-v = 'move-node-to-workspace V'
-ctrl-shift-w = 'move-node-to-workspace W'
-ctrl-shift-x = 'move-node-to-workspace X'
-ctrl-shift-y = 'move-node-to-workspace Y'
-ctrl-shift-z = 'move-node-to-workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 ctrl-tab = 'workspace-back-and-forth'
@@ -199,9 +173,10 @@ ctrl-shift-l = ['join-with right', 'mode main']
 #     'sketchybar --trigger aerospace_workspace_change FOCUSED=$AEROSPACE_FOCUSED_WORKSPACE'
 # ]
 
-after-startup-command = [
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
-]
+# Bringt n Error, weiß auch nicht wofür da?
+# after-startup-command = [
+#   'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+# ]
 
 # Detatch windows
 [[on-window-detected]]
