@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
       { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-      { out, "WarningMsg" },
+      { out,                            "WarningMsg" },
       { "\nPress any key to exit..." },
     }, true, {})
     vim.fn.getchar()
@@ -19,11 +19,10 @@ vim.opt.rtp:prepend(lazypath)
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
 -- leader configured at the beginnig
-vim.g.maplocalleader = '\\'
+vim.g.maplocalleader = "\\"
 
--- plugins
-local opts = {}
+vim.o.number = true
+-- vim.o.relativenumber = true
 
-require('vim-options')
-require('lazy').setup('plugins')
-
+require("vim-options")
+require("lazy").setup("plugins")

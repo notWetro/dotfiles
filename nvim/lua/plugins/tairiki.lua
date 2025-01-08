@@ -1,16 +1,16 @@
 -- colorscheme
 -- https://github.com/deparr/tairiki.nvim <- for more config
 return {
-  'deparr/tairiki.nvim',
+  "deparr/tairiki.nvim",
   lazy = false,
   priority = 1000, -- only necessary if you use tairiki as default theme
   config = function()
-    require('tairiki').setup {
+    require("tairiki").setup({
       -- optional configuration here
-      style = 'dark',
+      style = "dark",
       transparent = true,
-    }
-    require('tairiki').load() -- only necessary to use as default theme, has same behavior as ':colorscheme tairiki'
+    })
+    require("tairiki").load() -- only necessary to use as default theme, has same behavior as ':colorscheme tairiki'
   end,
 }
 
