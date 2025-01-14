@@ -95,8 +95,8 @@ outer.bottom = 10
 # '''
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-ctrl-i = 'layout tiles horizontal vertical'
-ctrl-u = 'layout accordion horizontal vertical'
+ctrl-shift-i = 'layout tiles horizontal vertical'
+ctrl-shift-u = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 ctrl-h = 'focus left'
@@ -116,6 +116,7 @@ ctrl-shift-m = 'resize smart +50'
 
 # shortcut to open apps
 ctrl-b = 'exec-and-forget open -a /Applications/Arc.app'
+ctrl-t = 'exec-and-forget open -a /Applications/kitty.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 ctrl-1 = 'workspace 1'
