@@ -97,22 +97,43 @@ outer.bottom = 10
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 ctrl-shift-i = 'layout tiles horizontal vertical'
 ctrl-shift-u = 'layout accordion horizontal vertical'
+# moonlander
+cmd-ctrl-alt-shift-i = 'layout tiles horizontal vertical'
+cmd-ctrl-alt-shift-u = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 ctrl-h = 'focus left'
 ctrl-j = 'focus down'
 ctrl-k = 'focus up'
 ctrl-l = 'focus right'
+# moonlander
+ctrl-alt-shift-d = 'focus left'
+ctrl-alt-shift-t = 'focus down'
+ctrl-alt-shift-r = 'focus up'
+ctrl-alt-shift-n = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 ctrl-shift-h = 'move left'
 ctrl-shift-j = 'move down'
 ctrl-shift-k = 'move up'
 ctrl-shift-l = 'move right'
+# moonlander
+ctrl-alt-shift-v = 'move left'
+ctrl-alt-shift-g = 'move down'
+ctrl-alt-shift-c = 'move up'
+ctrl-alt-shift-l = 'move right'
+
+ctrl-alt-shift-b = 'join-with left'
+ctrl-alt-shift-p = 'join-with down'
+ctrl-alt-shift-w = 'join-with up'
+ctrl-alt-shift-m = 'join-with right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 ctrl-shift-n = 'resize smart -50'
 ctrl-shift-m = 'resize smart +50'
+# moonlander
+cmd-ctrl-alt-shift-h = 'resize smart -50'
+cmd-ctrl-alt-shift-a = 'resize smart +50'
 
 # shortcut to open apps
 ctrl-b = 'exec-and-forget open -a /Applications/Arc.app'
