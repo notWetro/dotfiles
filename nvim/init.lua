@@ -26,3 +26,6 @@ vim.o.number = true
 
 require("vim-options")
 require("lazy").setup("plugins")
+
+-- for Obsidian checkboxes
+vim.opt.conceallevel = 1
