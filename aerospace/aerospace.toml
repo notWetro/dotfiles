@@ -216,3 +216,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-name-regex-substring = 'Reminders'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Riot Client'
+run = 'layout floating'
