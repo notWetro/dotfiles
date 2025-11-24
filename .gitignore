@@ -1,3 +1,5 @@
 .DS_Store
 ./github-copilot/apps.json
 github-copilot/apps.json
+flutter
+nvim/lazy-lock.json
