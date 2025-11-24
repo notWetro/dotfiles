@@ -1,5 +1,8 @@
 .DS_Store
+configstore/*
 ./github-copilot/apps.json
 github-copilot/apps.json
 flutter
 nvim/lazy-lock.json
+neofetch/neofetch-themes/*
+sketchybar/*
