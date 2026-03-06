@@ -3,6 +3,14 @@
 ## Leader Key
 Der Leader Key ist `,` (Komma)
 
+In Vim/Neovim Notation:
+
+     - <C-...> = Control/Strg
+     - <A-...> = Alt/Option (auf Mac)
+     - <M-...> = Meta (auch Alt, ältere Notation)
+     - <S-...> = Shift
+     - <D-...> = Command (nur auf Mac in GUI)
+
 ---
 
 ## Grundlegende Navigation & Bearbeitung
@@ -109,6 +117,21 @@ Der Leader Key ist `,` (Komma)
 
 ## LSP & Code Navigation
 
+### Navigation
+- `gd` - Go to Definition
+- `<C-]>` - Go to Definition (alternative)
+- `K` - Hover Documentation
+- `<C-k>` - Signature Help
+
+### Refactoring
+- `<space>rn` - Rename Variable
+- `<space>ca` - Code Actions
+
+### Workspace
+- `<space>wa` - Add Workspace Folder
+- `<space>wr` - Remove Workspace Folder
+- `<space>wl` - List Workspace Folders
+
 ### Glance
 - `<space>gd` - Definitionen anzeigen
 - `<space>gr` - Referenzen anzeigen
@@ -169,6 +192,7 @@ Der Leader Key ist `,` (Komma)
 ## Hinweise
 
 - **Leader Key** = `,` (Komma)
+- **Space** wird auch für einige LSP/Workspace Commands genutzt
 - **Alt** = `<A-...>` (z.B. `<A-j>`)
 - **Control** = `<C-...>` (z.B. `<C-u>`)
 - Viele Mappings haben descriptions - nutze `:map <key>` um Details zu sehen
