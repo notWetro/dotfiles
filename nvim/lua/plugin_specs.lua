@@ -780,6 +780,11 @@ local plugin_specs = {
     ---@type quicker.SetupOptions
     opts = {},
   },
+  -- MOSTflexiPL language support
+  {
+    "r4gus/vim-flx",
+    ft = "flx",
+  },
 }
 
 require("lazy").setup {
