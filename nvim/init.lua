@@ -1,31 +1,64 @@
--- Bootstrap lazy.nvim
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
-  if vim.v.shell_error ~= 0 then
-    vim.api.nvim_echo({
-      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-      { out,                            "WarningMsg" },
-      { "\nPress any key to exit..." },
-    }, true, {})
-    vim.fn.getchar()
-    os.exit(1)
-  end
-end
-vim.opt.rtp:prepend(lazypath)
+-- This is my personal Nvim configuration supporting Mac, Linux and Windows, with various plugins configured.
+-- This configuration evolves as I learn more about Nvim and become more proficient in using Nvim.
+-- Since it is very long (more than 1000 lines!), you should read it carefully and take only the settings that suit you.
+-- I would not recommend cloning this repo and replace your own config. Good configurations are personal,
+-- built over time with a lot of polish.
+--
+-- Author: Jiedong Hao
+-- Email: jdhao@hotmail.com
+-- Blog: https://jdhao.github.io/
+-- GitHub: https://github.com/jdhao
+-- StackOverflow: https://stackoverflow.com/users/6064933/jdhao
+vim.loader.enable()
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
--- leader configured at the beginnig
-vim.g.maplocalleader = "\\"
+local utils = require("utils")
 
-vim.o.number = true
--- vim.o.relativenumber = true
+local expected_version = "0.11.6"
+utils.is_compatible_version(expected_version)
 
-require("vim-options")
-require("lazy").setup("plugins")
+local config_dir = vim.fn.stdpath("config")
+---@cast config_dir string
 
--- for Obsidian checkboxes
-vim.opt.conceallevel = 1
+-- some global settings
+require("globals")
+-- setting options in nvim
+vim.cmd("source " .. vim.fs.joinpath(config_dir, "viml_conf/options.vim"))
+-- various autocommands
+require("custom-autocmd")
+-- all the user-defined mappings
+require("mappings")
+
+-- all the plugins installed and their configurations
+require("plugin_specs")
+
+-- diagnostic related config
+require("diagnostic-conf")
+
+-- colorscheme settings
+local color_scheme = require("colorschemes")
+
+-- Load a random colorscheme
+-- color_scheme.rand_colorscheme()
+
+-- Hier sind alle verfügbaren Colorschemes in deiner Konfiguration:
+     -- onedark - Style: darker
+     -- edge - Default style mit Italic
+     -- sonokai - Mit Italic support
+     -- gruvbox_material - Hard background, original foreground
+     -- everforest - Hard background mit Italic
+     -- nightfox (carbonfox variant)
+     -- onedarkpro (onedark_dark variant)
+     -- material - Darker style
+     -- arctic
+     -- kanagawa (kanagawa-dragon variant)
+     -- modus
+     -- jellybeans
+     -- github (github_dark_default)
+     -- e_ink - Hell/Paper-style
+     -- ashen
+     -- melange
+     -- makurai (makurai_dark)
+     -- vague
+     -- kanso
+     -- citruszest
+color_scheme.colorscheme_conf["onedarkpro"]()
